@@ -1,0 +1,1 @@
+awk '{gsub(/[^[:digit:]]/, "")}1' numbers.txt
