@@ -1,0 +1,1 @@
+awk -v date="$(date +"%Y-%m-%d %r")" '/This is/ { print $0, date}' time.txt
