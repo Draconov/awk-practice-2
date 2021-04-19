@@ -1,1 +1,1 @@
-awk '{gsub(/[^[:digit:]]/, "")}1' numbers.txt
+awk '/380/{ print $0 }' numbers.txt
