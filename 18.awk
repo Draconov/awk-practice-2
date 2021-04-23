@@ -1,0 +1,1 @@
+awk 'BEGIN{ print "All txt files:"} { print FILENAME; nextfile }END{ print "end"} ' *.txt

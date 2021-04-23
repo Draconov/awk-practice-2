@@ -1,0 +1,8 @@
+Завдання з блоку 1:
+17) awk '/+380/{ print $0 }' numbers.txt
+18) awk 'BEGIN{ print "All txt files:"} { print FILENAME; nextfile }END{ print "end"} ' *.txt
+22) awk -v date="$(date +"%Y-%m-%d %r")" '/This is/ { print $0, date}' time.txt
+Завдання з блоку 2:
+8) awk '! /^[[:space:][:upper:]]*$/' < upper.txt > output.txt
+13) df -Ph | awk '+$5>=10 || $1=="Filesystem"'
+29) awk 'BEGIN{OFS="_"} {for (i=1; i<NF; i++) printf "%s%s",$i,OFS; printf "%s\n", $NF}' < spaces.txt
